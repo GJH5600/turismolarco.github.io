@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUGARES TURÍSTICOS DE VÍCTOR LARCO HERRERA</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/dijfvpznc/image/upload/v1713943499/CHAMBAYA/mdvlh-logo_fc9yjx.ico"
+      type="image/x-icon"
+    />
+    <!-- AOS Library -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+
+    <link rel="stylesheet" href="ESTILOS/style.css" />
+  </head>
+  <body>
+    <!-- ESTRUCTURA DE CABECERA -->
+    <header class="header">
+      <div id="logo">
+        <a href="index.html">
+          <img src="https://images2.imgbox.com/45/8f/MFiJB4tV_o.png" />
+        </a>
+        <!-- <img class="logo-muni" src="../LOGO/mdvlh-logo.jpg" alt="logo">
+        Visita<a id="logo-s">Víctor Larco</a> -->
+      </div>
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <a href="#principal">INICIO</a>
+        <a href="#lugares">LUGARES TURÍSTICOS</a>
+        <a href="#atractivos">ATRACTIVOS TURÍSTICOS</a>
+        <a href="#galeria_fotos">GALERÍA DE FOTOS</a>
+        <a href="#galeria_videos">GALERÍA DE VIDEOS</a>
+      </nav>
+    </header>
+    <!-- ESTRUCTURA DE SLIDER -->
+    <div class="slider" id="principal">
+      <div class="myslider fade" style="display: block">
+        <div class="txt">
+          <h1>Asociación de criadores de caballos de Paso</h1>
+        </div>
+        <img
+          class="img_slider"
+          src="https://images2.imgbox.com/9b/48/70kavod0_o.jpg"
+          alt="Asociación de criadores de caballos de Paso"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+      <div class="myslider fade">
+        <div class="txt">
+          <h1>Plaza de Armas de Víctor Larco</h1>
+        </div>
+        <img
+          class="img_slider"
+          src="https://images2.imgbox.com/ca/f1/1lKu0tKK_o.jpg"
+          alt="Plaza de Armas de Víctor Larco"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+      <div class="myslider fade">
+        <div class="txt">
+          <h1>Paseo de las Aguas</h1>
+        </div>
+        <img
+          class="img_slider"
+          src="https://images2.imgbox.com/f6/a5/0dwpv2tS_o.jpg"
+          alt="Túnel de los deseos"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+      <div class="myslider fade">
+        <div class="txt">
+          <h1>Mural de Caballos de Paso</h1>
+        </div>
+        <img
+          class="img_slider"
+          src="https://images2.imgbox.com/f5/58/jVKKb96l_o.jpg"
+          alt="Mural de Caballos de Paso"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+      <div class="myslider fade">
+        <div class="txt">
+          <h1>Plaza cívica de Vista Alegre</h1>
+        </div>
+        <img
+          class="img_slider"
+          src="https://images2.imgbox.com/8f/4d/JdVfkRHZ_o.jpg"
+          alt="Plaza cívica de Vista Alegre"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="dotsbox" style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    </div>
+    <!-- ESTRUCTURA TARJETAS DE LUGARES TURÍSTICOS -->
+    <section class="lugares" id="lugares">
+      <br />
+      <h1 class="heading">
+        Conoce los lugares turísticos de Víctor Larco
+      </h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img
+              src="https://images2.imgbox.com/c9/f6/dFXiKAER_o.jpg"
+              alt="Paseo de las Aguas"
+            />
+            <h3><i class="fas fa-map-marker-alt"></i> Paseo de las Aguas</h3>
+          </div>
+          <div class="content">
+            <p>Tiene como uno de sus atractivos el Túnel de los deseos.</p>
+            <div class="cont-btn">
+              <a id="btn1" class="btn"
+                ><i class="fa-brands fa-readme"></i> Leer mas</a
+              >
+              <a class="btn-map" onclick="trazarRuta1()"
+                ><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a
+              >
+            </div>
+            <input type="hidden" id="latd1" value="-8.1299015" />
+            <input type="hidden" id="longd1" value="-79.0459271" />
+            <!-- https://www.google.com/maps/@-8.1299015,-79.0459271,3a,75y,33.24h,99.31t/data=!3m6!1e1!3m4!1s05T3PCbXlPtJn3ptAPsWQQ!2e0!7i16384!8i8192?entry=ttu -->
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="https://images2.imgbox.com/93/ad/UsLUhhi3_o.jpg"
+              alt="Plaza de Armas de Víctor Larco"
+            />
+            <h3>
+              <i class="fas fa-map-marker-alt"></i> Plaza de Armas de Víctor
+              Larco
+            </h3>
+          </div>
+          <div class="content">
+            <p>
+              En el centro de esta plaza se encuentra una pileta ornamental.
+            </p>
+            <div class="cont-btn">
+              <a id="btn2" class="btn"
+                ><i class="fa-brands fa-readme"></i> Leer mas</a
+              >
+              <a class="btn-map" onclick="trazarRuta2()"
+                ><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a
+              >
+            </div>
+            <input type="hidden" id="latd2" value="-8.1433818" />
+            <input type="hidden" id="longd2" value="-79.0563158" />
+            <!-- https://www.google.com/maps/@-8.1433818,-79.0563158,3a,75y,140.13h,89.72t/data=!3m7!1e1!3m5!1sB1oyIXHyZnQ9BJGJEpZLPw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DB1oyIXHyZnQ9BJGJEpZLPw%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D154.39029%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192?entry=ttu -->
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="https://images2.imgbox.com/38/01/ijp3efzN_o.jpg"
+              alt="Parroquia Santuario Señor de Huamán"
+            />
+            <h3>
+              <i class="fas fa-map-marker-alt"></i> Parroquia Señor de Huamán
+            </h3>
+          </div>
+          <div class="content">
+            <p>La más antigua de la región con un estilo barroco mestizo.</p>
+            <div class="cont-btn">
+              <a id="btn3" class="btn"
+                ><i class="fa-brands fa-readme"></i> Leer mas</a
+              >
+              <a class="btn-map" onclick="trazarRuta3()"
+                ><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a
+              >
+            </div>
+            <input type="hidden" id="latd3" value="-8.1379394" />
+            <input type="hidden" id="longd3" value="-79.0393199" />
+            <!-- https://www.google.com/maps/@-8.1379394,-79.0393199,3a,75y,97.44h,83.68t/data=!3m6!1e1!3m4!1s5me0Ozmnqlhbz8atQt4VfQ!2e0!7i16384!8i8192?entry=ttu -->
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="https://images2.imgbox.com/9a/0c/f0vE8nUf_o.jpg"
+              alt="Mural de caballos de paso"
+            />
+            <h3>
+              <i class="fas fa-map-marker-alt"></i> Mural de caballos de paso
+            </h3>
+          </div>
+          <div class="content">
+            <p>Rinde homenaje a los tradicionales jinetes trujillanos.</p>
+            <div class="cont-btn">
+              <a id="btn4" class="btn"
+                ><i class="fa-brands fa-readme"></i> Leer mas</a
+              >
+              <a class="btn-map" onclick="trazarRuta4()"
+                ><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a
+              >
+            </div>
+            <input type="hidden" id="latd4" value="-8.1369386" />
+            <input type="hidden" id="longd4" value="-79.0313629" />
+            <!-- https://www.google.com/maps/@-8.1369386,-79.0313629,3a,75y,43.74h,87.8t/data=!3m6!1e1!3m4!1sN72LL1neapG5tKzjn28efg!2e0!7i16384!8i8192?entry=ttu -->
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="https://images2.imgbox.com/a0/89/xM46zw7f_o.jpg"
+              alt="Asociación de Criadores de Caballos de Paso"
+            />
+            <h3>
+              <i class="fas fa-map-marker-alt"></i> Asoc. de criadores de
+              caballos de paso
+            </h3>
+          </div>
+          <div class="content">
+            <p>Ofrece exhibiciones de caballos de paso al público.</p>
+            <div class="cont-btn">
+              <a id="btn5" class="btn"
+                ><i class="fa-brands fa-readme"></i> Leer mas</a
+              >
+              <a class="btn-map" onclick="trazarRuta5()"
+                ><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a
+              >
+            </div>
+            <input type="hidden" id="latd5" value="-8.1364673" />
+            <input type="hidden" id="longd5" value="-79.0588778" />
+            <!-- https://www.google.com/maps/@-8.1364673,-79.0588778,3a,15y,238.75h,84.82t/data=!3m6!1e1!3m4!1s8ZhLUwE6I1fNSaH9DCsj9Q!2e0!7i16384!8i8192?entry=ttu -->
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="https://images2.imgbox.com/0a/26/881T11XO_o.jpg"
+              alt="Plaza cívica de Vista Alegre"
+            />
+            <h3>
+              <i class="fas fa-map-marker-alt"></i> Plaza cívica de Vista Alegre
+            </h3>
+          </div>
+          <div class="content">
+            <p>Cuenta con una pileta ornamental con arquitectura acuática.</p>
+            <div class="cont-btn">
+              <a id="btn6" class="btn"
+                ><i class="fa-brands fa-readme"></i> Leer mas</a
+              >
+              <a class="btn-map" onclick="trazarRuta6()"
+                ><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a
+              >
+            </div>
+            <input type="hidden" id="latd6" value="-8.1387674" />
+            <input type="hidden" id="longd6" value="-79.0486611" />
+            <!-- https://www.google.com/maps/@-8.1387674,-79.0486611,3a,48.5y,113.27h,89.91t/data=!3m6!1e1!3m4!1snfBfPGMjqQJAPZloNWrK7w!2e0!7i16384!8i8192?entry=ttu -->
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="https://images2.imgbox.com/1e/98/0Dq9u4K0_o.jpg"
+              alt="Senorial plaza huaman"
+            />
+            <h3><i class="fas fa-map-marker-alt"></i> Señorial plaza Huamán</h3>
+          </div>
+          <div class="content">
+            <p>Ubicado entre las avenidas Huamán y prolongación Vallejo.</p>
+            <div class="cont-btn">
+              <a id="btn7" class="btn"
+                ><i class="fa-brands fa-readme"></i> Leer mas</a
+              >
+              <a class="btn-map" onclick="trazarRuta7()"
+                ><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a
+              >
+            </div>
+            <input type="hidden" id="latd7" value="-8.1377968" />
+            <input type="hidden" id="longd7" value="-79.0396293" />
+            <!-- https://www.google.com/maps/@-8.1377968,-79.0396293,3a,75y,92.6h,90.26t/data=!3m6!1e1!3m4!1sqI1tSeyH6jvttVBloUKIGw!2e0!7i16384!8i8192?entry=ttu -->
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="https://images2.imgbox.com/41/8e/EScqsTMX_o.jpg"
+              alt="Plaza cesar Vallejo"
+            />
+            <h3><i class="fas fa-map-marker-alt"></i> Plaza César Vallejo</h3>
+          </div>
+          <div class="content">
+            <p>
+              Creado para perennizar la obra de César Abraham Vallejo Mendoza.
+            </p>
+            <div class="cont-btn">
+              <a id="btn8" class="btn"
+                ><i class="fa-brands fa-readme"></i> Leer mas</a
+              >
+              <a class="btn-map" onclick="trazarRuta8()"
+                ><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a
+              >
+            </div>
+            <input type="hidden" id="latd8" value="-8.1320864" />
+            <input type="hidden" id="longd8" value="-79.0397578" />
+            <!-- https://www.google.com/maps/@-8.1320864,-79.0397578,3a,64.5y,27.61h,97.81t/data=!3m6!1e1!3m4!1sSJ8fnjHP4jhERzTL2ya_tw!2e0!7i13312!8i6656?entry=ttu -->
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="https://images2.imgbox.com/25/30/XoFQS4Cz_o.jpg"
+              alt="Escultura virgen de la medalla milagrosa"
+            />
+            <h3>
+              <i class="fas fa-map-marker-alt"></i> Escultura Virgen de la
+              medalla milagrosa
+            </h3>
+          </div>
+          <div class="content">
+            <p>La Inmaculada imagen mide tres metros de alto.</p>
+            <div class="cont-btn">
+              <a id="btn9" class="btn"
+                ><i class="fa-brands fa-readme"></i> Leer mas</a
+              >
+              <a class="btn-map" onclick="trazarRuta9()"
+                ><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a
+              >
+            </div>
+            <input type="hidden" id="latd9" value="-8.1277255" />
+            <input type="hidden" id="longd9" value="-79.041455" />
+            <!-- https://www.google.com/maps/@-8.1277255,-79.041455,3a,75y,270.01h,89.43t/data=!3m6!1e1!3m4!1sVj2qhlwA0TAy8KcRvD4IHg!2e0!7i16384!8i8192?entry=ttu -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ESTRUCTURA DE VENTANAS MODALES -->
+    <section id="modal1" class="modal">
+      <div class="modal__container">
+        <div id="gallery">
+          <div id="gallery-container1" class="gallery-container">
+              <figure id="gallery-item1" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/ac/59/IYz4EZFB_o.jpg"
+                alt="Paseo de las Aguas"
+              />
+              </figure>
+              <figure id="gallery-item1" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/ff/91/TpaX52cW_o.jpg"
+                alt="Paseo de las Aguas"
+              />
+              </figure>
+              <figure id="gallery-item1" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/d5/ad/xyvo1obD_o.jpg"
+                alt="Paseo de las Aguas"
+              />
+              </figure>
+          </div>
+          <nav class="gallery-navigation">
+              <button id="prev-button1" class="nav-button prev-button"><i class="fa-solid fa-circle-chevron-left"></i></button>
+              <button id="next-button1" class="nav-button next-button"><i class="fa-solid fa-circle-chevron-right"></i></button>
+          </nav>
+        </div>
+        <h2>Paseo de las Aguas</h2>
+        <p>
+          Cuenta con una pileta lúdica recreativa con surtidores de hilos de
+          agua multicolor dispuestos en forma circular con espacios para que las
+          personas puedan desplazarse dentro de la pileta. Se ubica en el cruce
+          de la Avenida Larco con la avenida Víctor Raúl Haya de la Torre.
+        </p>
+        <div id="close__modal1" class="close__modal"><i class="fa-solid fa-circle-xmark"></i></div>
+      </div>
+    </section>
+
+    <section id="modal2" class="modal">
+      <div class="modal__container">
+        <div id="gallery">
+          <div id="gallery-container2" class="gallery-container">
+              <figure id="gallery-item2" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/9a/c3/giZkaR4t_o.jpg"
+                alt="Plaza de Armas de Víctor Larco"
+              />
+              </figure>
+              <figure id="gallery-item2" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/cd/b6/qK5Ft6tP_o.jpg"
+                alt="Plaza de Armas de Víctor Larco"
+              />
+              </figure>
+              <figure id="gallery-item2" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/df/e0/yMpZn1Mj_o.jpg"
+                alt="Plaza de Armas de Víctor Larco"
+              />
+              </figure>
+          </div>
+          <nav class="gallery-navigation">
+              <button id="prev-button2" class="nav-button prev-button"><i class="fa-solid fa-circle-chevron-left"></i></button>
+              <button id="next-button2" class="nav-button next-button"><i class="fa-solid fa-circle-chevron-right"></i></button>
+          </nav>
+        </div>
+        <h2>Plaza de Armas de Víctor Larco</h2>
+        <p>
+          En el centro de esta plaza se encuentra una pileta ornamental. Se
+          encuentra ubicada en el sector de Buenos Aires, frente a la sede
+          principal de la Municipalidad Distrital de Víctor Larco.
+        </p>
+        <div id="close__modal2" class="close__modal"><i class="fa-solid fa-circle-xmark"></i></div>
+      </div>
+    </section>
+
+    <section id="modal3" class="modal">
+      <div class="modal__container">
+        <div id="gallery">
+          <div id="gallery-container3" class="gallery-container">
+              <figure id="gallery-item3" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/e3/9b/2GIgJcqm_o.jpg"
+                alt="Parroquia Señor de Huamán"
+              />
+              </figure>
+              <figure id="gallery-item3" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/5b/8b/oV5t4aDl_o.jpg"
+                alt="Parroquia Señor de Huamán"
+              />
+              </figure>
+              <figure id="gallery-item3" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/2d/23/qttp3Zsk_o.jpg"
+                alt="Parroquia Señor de Huamán"
+              />
+              </figure>
+          </div>
+          <nav class="gallery-navigation">
+              <button id="prev-button3" class="nav-button prev-button"><i class="fa-solid fa-circle-chevron-left"></i></button>
+              <button id="next-button3" class="nav-button next-button"><i class="fa-solid fa-circle-chevron-right"></i></button>
+          </nav>
+        </div>
+        <h2>Parroquia Señor de Huamán</h2>
+        <p>
+          Se ubica en el antiguo pueblo de Santiago de Huamán. Es la más antigua
+          de la región con un estilo barroco mestizo predominante; así mismo la
+          Plaza Mayor de Huamán.
+        </p>
+        <div id="close__modal3" class="close__modal"><i class="fa-solid fa-circle-xmark"></i></div>
+      </div>
+    </section>
+
+    <section id="modal4" class="modal">
+      <div class="modal__container">
+        <div id="gallery">
+          <div id="gallery-container4" class="gallery-container">
+              <figure id="gallery-item4" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/87/a7/mrV3Ivl9_o.jpg"
+                alt="Mural de caballos de paso"
+              />
+              </figure>
+              <figure id="gallery-item4" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/24/f6/qTs32OeF_o.jpg"
+                alt="Mural de caballos de paso"
+              />
+              </figure>
+              <figure id="gallery-item4" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/7d/4f/ObA2TXbq_o.jpg"
+                alt="Mural de caballos de paso"
+              />
+              </figure>
+          </div>
+          <nav class="gallery-navigation">
+              <button id="prev-button4" class="nav-button prev-button"><i class="fa-solid fa-circle-chevron-left"></i></button>
+              <button id="next-button4" class="nav-button next-button"><i class="fa-solid fa-circle-chevron-right"></i></button>
+          </nav>
+        </div>
+        <h2>Mural de caballos de paso</h2>
+        <p>
+          Se encuentra ubicado en la calle El Palmar de la urbanización Palmeras
+          del Golf, rinde homenaje a los tradicionales jinetes trujillanos y de
+          la región denominados chalanes. Se construyó hace 35 años a iniciativa
+          de la familia Ganoza, dando importancia a la crianza y cuidado del
+          caballo de paso en la ciudad.
+        </p>
+        <div id="close__modal4" class="close__modal"><i class="fa-solid fa-circle-xmark"></i></div>
+      </div>
+    </section>
+
+    <section id="modal5" class="modal">
+      <div class="modal__container">
+        <div id="gallery">
+          <div id="gallery-container5" class="gallery-container">
+              <figure id="gallery-item5" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/aa/07/KykDEXpj_o.jpg"
+                alt="Asociación de criadores de caballos de paso"
+              />
+              </figure>
+              <figure id="gallery-item5" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/e2/80/y1AIdtex_o.jpg"
+                alt="Asociación de criadores de caballos de paso"
+              />
+              </figure>
+              <figure id="gallery-item5" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/4b/61/4a7tLfxf_o.jpg"
+                alt="Asociación de criadores de caballos de paso"
+              />
+              </figure>
+          </div>
+          <nav class="gallery-navigation">
+              <button id="prev-button5" class="nav-button prev-button"><i class="fa-solid fa-circle-chevron-left"></i></button>
+              <button id="next-button5" class="nav-button next-button"><i class="fa-solid fa-circle-chevron-right"></i></button>
+          </nav>
+        </div>
+        <h2>Asociación de criadores de caballos de paso</h2>
+        <p>
+          Está ubicada en el kilómetro 569 de la vía de evitamiento, ofrece
+          exhibiciones de sus mejores exponentes de caballos de paso al público.
+          Además, organiza concursos de caballos de paso a nivel regional y
+          nacional.
+        </p>
+        <div id="close__modal5" class="close__modal"><i class="fa-solid fa-circle-xmark"></i></div>
+      </div>
+    </section>
+
+    <section id="modal6" class="modal">
+      <div class="modal__container">
+        <div id="gallery">
+          <div id="gallery-container6" class="gallery-container">
+              <figure id="gallery-item6" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/5f/da/POlQUQ3x_o.jpg"
+                alt="Plaza cívica de Vista Alegre"
+              />
+              </figure>
+              <figure id="gallery-item6" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/33/b5/wRN91Rjf_o.jpg"
+                alt="Plaza cívica de Vista Alegre"
+              />
+              </figure>
+              <figure id="gallery-item6" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/9d/45/NhySkSgP_o.jpg"
+                alt="Plaza cívica de Vista Alegre"
+              />
+              </figure>
+          </div>
+          <nav class="gallery-navigation">
+              <button id="prev-button6" class="nav-button prev-button"><i class="fa-solid fa-circle-chevron-left"></i></button>
+              <button id="next-button6" class="nav-button next-button"><i class="fa-solid fa-circle-chevron-right"></i></button>
+          </nav>
+        </div>
+        <h2>Plaza cívica de Vista Alegre</h2>
+        <p>
+          Cuenta con una pileta ornamental con arquitectura acuática, cuya
+          fuente de agua de 12 metros tiene un conjunto escultórico que
+          representa la figura de Neptuno, Dios de los Océanos, rodeado de
+          caballos, tritones y conchas, en medio de luces y juegos de agua.
+        </p>
+        <div id="close__modal6" class="close__modal"><i class="fa-solid fa-circle-xmark"></i></div>
+      </div>
+    </section>
+
+    <section id="modal7" class="modal">
+      <div class="modal__container">
+        <div id="gallery">
+          <div id="gallery-container7" class="gallery-container">
+              <figure id="gallery-item7" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/b4/e0/F2zEuT2A_o.jpg"
+                alt="Señorial plaza Huamán"
+              />
+              </figure>
+              <figure id="gallery-item7" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/80/5b/i7hByuTl_o.jpg"
+                alt="Señorial plaza Huamán"
+              />
+              </figure>
+              <figure id="gallery-item7" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/bd/0b/DDxptrmg_o.jpg"
+                alt="Señorial plaza Huamán"
+              />
+              </figure>
+          </div>
+          <nav class="gallery-navigation">
+              <button id="prev-button7" class="nav-button prev-button"><i class="fa-solid fa-circle-chevron-left"></i></button>
+              <button id="next-button7" class="nav-button next-button"><i class="fa-solid fa-circle-chevron-right"></i></button>
+          </nav>
+        </div>
+        <h2>Señorial plaza Huamán</h2>
+        <p>
+          Ubicado entre las avenidas Huamán y prolongación Vallejo, de estilo
+          colonial con una pileta en cuya parte superior lleva una cruz que
+          armoniza con el frontis del templo de estilo barroco construido en el
+          siglo XVI, único en el norte y alberga al Señor de Huamán.
+        </p>
+        <div id="close__modal7" class="close__modal"><i class="fa-solid fa-circle-xmark"></i></div>
+      </div>
+    </section>
+
+    <section id="modal8" class="modal">
+      <div class="modal__container">
+        <div id="gallery">
+          <div id="gallery-container8" class="gallery-container">
+              <figure id="gallery-item8" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/c2/ac/bo1N94bh_o.jpg"
+                alt="Plaza César Vallejo"
+              />
+              </figure>
+              <figure id="gallery-item8" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/8a/d8/W5c6JGdY_o.jpg"
+                alt="Plaza César Vallejo"
+              />
+              </figure>
+              <figure id="gallery-item8" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/4b/6f/jN85w4Jy_o.jpg"
+                alt="Plaza César Vallejo"
+              />
+              </figure>
+          </div>
+          <nav class="gallery-navigation">
+              <button id="prev-button8" class="nav-button prev-button"><i class="fa-solid fa-circle-chevron-left"></i></button>
+              <button id="next-button8" class="nav-button next-button"><i class="fa-solid fa-circle-chevron-right"></i></button>
+          </nav>
+        </div>
+        <h2>Plaza César Vallejo</h2>
+        <p>
+          Espacio ubicado en la calle Juan Julio Ganoza, urbanización
+          California, creado para perennizar la obra del vate universal
+          liberteño, César Abraham Vallejo Mendoza, se observa la figura del
+          poeta en su clásica postura en una banca rodeado de piletas de agua y
+          luces. Detrás, un artístico mural con poemas que relatan desde su
+          niñez hasta su adultez.
+        </p>
+        <div id="close__modal8" class="close__modal"><i class="fa-solid fa-circle-xmark"></i></div>
+      </div>
+    </section>
+
+    <section id="modal9" class="modal">
+      <div class="modal__container">
+        <div id="gallery">
+          <div id="gallery-container9" class="gallery-container">
+              <figure id="gallery-item9" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/e1/4d/l7AdbGxG_o.jpg"
+                alt="Escultura Virgen de la medalla milagrosa"
+              />
+              </figure>
+              <figure id="gallery-item9" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/75/40/cDO5H2xK_o.jpg"
+                alt="Escultura Virgen de la medalla milagrosa"
+              />
+              </figure>
+              <figure id="gallery-item9" class="gallery-item">
+                <img
+                src="https://images2.imgbox.com/0e/1e/upvueWfI_o.jpg"
+                alt="Escultura Virgen de la medalla milagrosa"
+              />
+              </figure>
+          </div>
+          <nav class="gallery-navigation">
+              <button id="prev-button9" class="nav-button prev-button"><i class="fa-solid fa-circle-chevron-left"></i></button>
+              <button id="next-button9" class="nav-button next-button"><i class="fa-solid fa-circle-chevron-right"></i></button>
+          </nav>
+        </div>
+        <h2>Escultura Virgen de la medalla milagrosa</h2>
+        <p>
+          La Inmaculada imagen mide tres metros de alto y cuenta con una
+          iluminación ornamental (iluminación especial, denominada
+          frío-caliente). Se encuentra ubicada en la intersección de las
+          avenidas Larco y Fátima, donde empieza la jurisdiccion del Distrito de
+          Victor Larco, de esta manera la Virgen recibe con los brazos abiertos
+          a todos dándoles la bienvenida.
+        </p>
+        <div id="close__modal9" class="close__modal"><i class="fa-solid fa-circle-xmark"></i></div>
+      </div>
+    </section>
+    <!-- ESTRUCTURA ATRACTIVOS TURÍSTICOS -->
+    <section class="atractivos" id="atractivos">
+      <br />
+      <h1 class="heading">
+        Atractivos turísticos
+      </h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img
+              src="https://images2.imgbox.com/f3/ac/os8bEYPJ_o.jpg"
+              alt=" El arco de El Golf"
+            />
+          </div>
+          <div class="content">
+            <h3>El arco de El Golf</h3>
+            <div class="btn-map-cont">
+              <a class="btn-map" onclick="verRuta()"
+                ><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a
+              >
+            </div>
+            <input type="hidden" id="lat1" value="-8.1374288" />
+            <input type="hidden" id="long1" value="-79.0342769" />
+            <!-- <input type="hidden" name="Id" value="<?php echo $row['IDUSUARIO']; ?>"/> -->
+            <!-- <div class="btn-map-cont">
+              <a href="https://www.google.com/maps/@-8.1374288,-79.0342769,3a,90y,134.28h,91.24t/data=!3m6!1e1!3m4!1smsBjRj4z1KK_YYQFIyhpng!2e0!7i16384!8i8192?entry=ttu" class="btn-map"
+                ><i class="fas fa-map-marker-alt"></i> Visitar</a
+              >
+            </div> -->
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="https://images2.imgbox.com/46/0e/ZzWtxsXQ_o.jpg"
+              alt="Óvalo de la Marinera"
+            />
+          </div>
+          <div class="content">
+            <h3>Óvalo de la marinera</h3>
+            <div class="btn-map-cont">
+              <a class="btn-map" onclick="verRuta2()"
+                ><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a
+              >
+            </div>
+            <input type="hidden" id="lat2" value="-8.1421438" />
+            <input type="hidden" id="long2" value="-79.028768" />
+            <!-- <div class="btn-map-cont">
+              <a href="https://www.google.com/maps/@-8.1421438,-79.028768,3a,67.4y,162.77h,68.59t/data=!3m6!1e1!3m4!1su2DaP2kTxsZ4qg0z8K2GdA!2e0!7i16384!8i8192?entry=ttu" class="btn-map"
+                ><i class="fas fa-map-marker-alt"></i> Visitar</a
+              >
+            </div> -->
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="https://images2.imgbox.com/90/4b/IWVeG3Rg_o.jpg"
+              alt="Alameda santa rosa"
+            />
+          </div>
+          <div class="content">
+            <h3>Alameda Santa Rosa</h3>
+            <div class="btn-map-cont">
+              <a class="btn-map" onclick="verRuta3()"
+                ><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a
+              >
+            </div>
+            <input type="hidden" id="lat3" value="-8.1434404" />
+            <input type="hidden" id="long3" value="-79.0542451" />
+
+            <!-- <div class="btn-map-cont">
+              <a href="https://www.google.com/maps/@-8.1434404,-79.0542451,3a,63.7y,123.71h,83.01t/data=!3m6!1e1!3m4!1s8NP1HwPg6DlJEpEm7zabBw!2e0!7i16384!8i8192?entry=ttu" class="btn-map"
+                ><i class="fas fa-map-marker-alt"></i> Visitar</a
+              >
+            </div> -->
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="https://images2.imgbox.com/1d/c4/TMPEc6SL_o.jpg"
+              alt="Plaza virgen de la medalla milagrosa"
+            />
+          </div>
+          <div class="content">
+            <h3>Plaza Virgen de la medalla milagrosa</h3>
+            <div class="btn-map-cont">
+              <a class="btn-map" onclick="verRuta4()"
+                ><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a
+              >
+            </div>
+            <input type="hidden" id="lat4" value="-8.1352707" />
+            <input type="hidden" id="long4" value="-79.0504151" />
+
+            <!-- <div class="btn-map-cont">
+              <a href="https://www.google.com/maps/@-8.1352707,-79.0504151,3a,49.6y,236.08h,80.92t/data=!3m6!1e1!3m4!1sYl2GVAFAH68bm_hhRbkPjA!2e0!7i16384!8i8192?entry=ttu" class="btn-map"
+                ><i class="fas fa-map-marker-alt"></i> Visitar</a
+              >
+            </div> -->
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="https://images2.imgbox.com/86/21/Cc3Gtp2m_o.jpg"
+              alt="Parroquia virgen de fatima"
+            />
+          </div>
+          <div class="content">
+            <h3>Parroquia Virgen de Fátima</h3>
+            <div class="btn-map-cont">
+              <a class="btn-map" onclick="verRuta5()"
+                ><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a
+              >
+            </div>
+            <input type="hidden" id="lat5" value="-8.128439" />
+            <input type="hidden" id="long5" value="-79.0400242" />
+            <!-- <div class="btn-map-cont">
+              <a href="https://www.google.com/maps/@-8.128439,-79.0400242,3a,53.4y,180.54h,86.63t/data=!3m6!1e1!3m4!1sZfhZ1CpibMjaQMQO6ho-wQ!2e0!7i16384!8i8192?entry=ttu" class="btn-map"
+                ><i class="fas fa-map-marker-alt"></i> Visitar</a
+              >
+            </div> -->
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="https://images2.imgbox.com/fb/51/cucwrbBm_o.png"
+              alt="Alameda Larco"
+            />
+          </div>
+          <div class="content">
+            <h3>Alameda Larco</h3>
+            <div class="btn-map-cont">
+              <a class="btn-map" onclick="verRuta6()"
+                ><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a
+              >
+            </div>
+            <input type="hidden" id="lat6" value="-8.143794" />
+            <input type="hidden" id="long6" value="-79.0553069" />
+            <!-- <div class="btn-map-cont">
+              <a href="https://www.google.com/maps/@-8.143794,-79.0553069,3a,75y,275.02h,87.65t/data=!3m6!1e1!3m4!1sZLDa-9QXiQdiBI7HlBpc_w!2e0!7i16384!8i8192?entry=ttu" class="btn-map"
+                ><i class="fas fa-map-marker-alt"></i> Visitar</a
+              >
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estructura Galería de fotos-->
+    <br />
+    <h1 class="heading" id="galeria_fotos">Galería de fotos</h1>
+    <div class="gallery">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Buscar..." />
+      </div>
+      <div class="images">
+        <div class="image-box" data-name="Paseo de las Aguas">
+          <img
+            src="https://images2.imgbox.com/ff/91/TpaX52cW_o.jpg"
+            alt="Paseo de Aguas"
+          />
+          <h5>Paseo de las Aguas</h5>
+        </div>
+        <div class="image-box" data-name="Alameda Larco">
+          <img
+            src="https://images2.imgbox.com/f4/0a/xqrvwGdX_o.jpg"
+            alt="Alameda Larco"
+          />
+          <h5>Alameda Larco</h5>
+        </div>
+        <div
+          class="image-box"
+          data-name="Asociacion de criadores de caballos de paso"
+        >
+          <img
+            src="https://images2.imgbox.com/aa/07/KykDEXpj_o.jpg"
+            alt="Asoc. criadores de caballos de paso"
+          />
+          <h5>Asociación de criadores de caballos de paso</h5>
+        </div>
+        <div class="image-box" data-name="Plaza civica de Vista Alegre">
+          <img
+            src="https://images2.imgbox.com/fc/f6/Sg62Pf0B_o.jpg"
+            alt="Plaza cívica de Vista Alegre"
+          />
+          <h5>Plaza cívica de Vista Alegre</h5>
+        </div>
+        <div class="image-box" data-name="Parroquia Virgen de Fatima">
+          <img
+            src="https://images2.imgbox.com/01/2c/N7FJ8Fdp_o.jpg"
+            alt="Parroquia Virgen de Fátima"
+          />
+          <h5>Parroquia Virgen de Fátima</h5>
+        </div>
+        <div
+          class="image-box"
+          data-name="Escultura Virgen de la medalla milagrosa"
+        >
+          <img
+            src="https://images2.imgbox.com/e1/4d/l7AdbGxG_o.jpg"
+            alt="Escultura Virgen de la medalla milagrosa"
+          />
+          <h5>Escultura Virgen de la medalla milagrosa</h5>
+        </div>
+        <div class="image-box" data-name="El arco de El Golf">
+          <img
+            src="https://images2.imgbox.com/5f/1e/RgGyNVSN_o.jpg"
+            alt="El arco de El Golf"
+          />
+          <h5>El arco de El Golf</h5>
+        </div>
+        <div class="image-box" data-name="Mural de caballos de paso">
+          <img
+            src="https://images2.imgbox.com/8c/5e/Y8F2zGMm_o.jpg"
+            alt="Mural de caballos de paso"
+          />
+          <h5>Mural de caballos de paso</h5>
+        </div>
+        <div class="image-box" data-name="Alameda Santa Rosa">
+          <img
+            src="https://images2.imgbox.com/ee/9f/eCrbK0FJ_o.jpg"
+            alt="Alameda Santa Rosa"
+          />
+          <h5>Alameda Santa Rosa</h5>
+        </div>
+        <div class="image-box" data-name="Plaza de armas de Victor Larco">
+          <img
+            src="https://images2.imgbox.com/9a/c3/giZkaR4t_o.jpg"
+            alt="Plaza de armas de Victor Larco"
+          />
+          <h5>Plaza de armas de Víctor Larco</h5>
+        </div>
+        <div class="image-box" data-name="Plaza Virgen de la medalla milagrosa">
+          <img
+            src="https://images2.imgbox.com/da/66/EYIaYKF5_o.jpg"
+            alt="Plaza Virgen de la medalla milagrosa"
+          />
+          <h5>Plaza Virgen de la medalla milagrosa</h5>
+        </div>
+        <div class="image-box" data-name="Señorial plaza Huaman">
+          <img
+            src="https://images2.imgbox.com/80/5b/i7hByuTl_o.jpg"
+            alt="Señorial plaza Huaman"
+          />
+          <h5>Señorial plaza Huamán</h5>
+        </div>
+        <div class="image-box" data-name="Plaza Cesar Vallejo">
+          <img
+            src="https://images2.imgbox.com/0d/72/SR68tf3O_o.jpg"
+            alt="Plaza Cesar Vallejo"
+          />
+          <h5>Plaza César Vallejo</h5>
+        </div>
+        <div class="image-box" data-name="Parroquia señor de Huaman">
+          <img
+            src="https://images2.imgbox.com/2d/23/qttp3Zsk_o.jpg"
+            alt="Parroquia señor de Huaman"
+          />
+          <h5>Parroquia Señor de Huamán</h5>
+        </div>
+        <div class="image-box" data-name="Paseo de las Aguas">
+          <img
+            src="https://images2.imgbox.com/d5/ad/xyvo1obD_o.jpg"
+            alt="Paseo de Aguas"
+          />
+          <h5>Paseo de las Aguas</h5>
+        </div>
+        <div class="image-box" data-name="Parroquia Virgen de Fatima">
+          <img
+            src="https://images2.imgbox.com/d0/e8/5jmx5DOf_o.jpg"
+            alt="Parroquia Virgen de Fátima"
+          />
+          <h5>Parroquia Virgen de Fátima</h5>
+        </div>
+        <div class="image-box" data-name="Plaza civica de Vista Alegre">
+          <img
+            src="https://images2.imgbox.com/5f/da/POlQUQ3x_o.jpg"
+            alt="Plaza cívica de Vista Alegre"
+          />
+          <h5>Plaza cívica de Vista Alegre</h5>
+        </div>
+        <div class="image-box" data-name="Alameda Santa Rosa">
+          <img
+            src="https://images2.imgbox.com/36/66/woVBqdFz_o.jpg"
+            alt="Alameda Santa Rosa"
+          />
+          <h5>Alameda Santa Rosa</h5>
+        </div>
+        <div
+          class="image-box"
+          data-name="Escultura Virgen de la medalla milagrosa"
+        >
+          <img
+            src="https://images2.imgbox.com/0e/1e/upvueWfI_o.jpg"
+            alt="Escultura Virgen de la medalla milagrosa"
+          />
+          <h5>Escultura Virgen de la medalla milagrosa</h5>
+        </div>
+        <div class="image-box" data-name="Mural de caballos de paso">
+          <img
+            src="https://images2.imgbox.com/7d/4f/ObA2TXbq_o.jpg"
+            alt="Mural de caballos de paso"
+          />
+          <h5>Mural de caballos de paso</h5>
+        </div>
+        <div class="image-box" data-name="Señorial plaza Huaman">
+          <img
+            src="https://images2.imgbox.com/bd/0b/DDxptrmg_o.jpg"
+            alt="Señorial plaza Huaman"
+          />
+          <h5>Señorial plaza Huamán</h5>
+        </div>
+        <div class="image-box" data-name="Ovalo de la Marinera">
+          <img
+            src="https://images2.imgbox.com/69/cf/Rm93oQjJ_o.jpg"
+            alt="Ovalo de la Marinera"
+          />
+          <h5>Ovalo de la Marinera</h5>
+        </div>
+        <div class="image-box" data-name="Plaza Virgen de la medalla milagrosa">
+          <img
+            src="https://images2.imgbox.com/68/42/isMZb7gO_o.jpg"
+            alt="Plaza Virgen de la medalla milagrosa"
+          />
+          <h5>Plaza Virgen de la medalla milagrosa</h5>
+        </div>
+        <div
+          class="image-box"
+          data-name="Asociacion de criadores de caballos de paso"
+        >
+          <img
+            src="https://images2.imgbox.com/4b/61/4a7tLfxf_o.jpg"
+            alt="Asoc. criadores de caballos de paso"
+          />
+          <h5>Asociación de criadores de caballos de paso</h5>
+        </div>
+        <div class="image-box" data-name="Ovalo de la Marinera">
+          <img
+            src="https://images2.imgbox.com/74/ba/L35ypxSH_o.jpg"
+            alt="Ovalo de la Marinera"
+          />
+          <h5>Ovalo de la Marinera</h5>
+        </div>
+        <div class="image-box" data-name="Plaza de armas de Victor Larco">
+          <img
+          src="https://images2.imgbox.com/df/e0/yMpZn1Mj_o.jpg"
+            alt="Plaza de armas de Victor Larco"
+          />
+          <h5>Plaza de armas de Víctor Larco</h5>
+        </div>
+        <div class="image-box" data-name="Plaza Cesar Vallejo">
+          <img
+            src="https://images2.imgbox.com/c1/21/aQ4MYk2y_o.jpg"
+            alt="Plaza Cesar Vallejo"
+          />
+          <h5>Plaza César Vallejo</h5>
+        </div>
+        <div class="image-box" data-name="Parroquia señor de Huaman">
+          <img
+          src="https://images2.imgbox.com/e3/9b/2GIgJcqm_o.jpg"
+            alt="Parroquia señor de Huaman"
+          />
+          <h5>Parroquia Señor de Huamán</h5>
+        </div>
+        <div class="image-box" data-name="Alameda Larco">
+          <img
+            src="https://images2.imgbox.com/f7/41/0lO45miw_o.jpeg"
+            alt="Alameda Larco"
+          />
+          <h5>Alameda Larco</h5>
+        </div>
+        <div class="image-box" data-name="El arco de El Golf">
+          <img
+            src="https://images2.imgbox.com/8c/65/0nFDy3FV_o.jpg"
+            alt="El arco de El Golf"
+          />
+          <h5>El arco de El Golf</h5>
+        </div>
+      </div>
+      <!-- popup Image -->
+      <div class="popup-image">
+        <i class="fa-solid fa-x"></i>
+        <img src="" />
+      </div>
+    </div>
+    <!-- Estructura Galería de Videos -->
+    <br />
+    <h1 class="heading" id="galeria_videos">
+      Galería de videos
+    </h1>
+    <div class="container">
+      <div class="main-video">
+        <div class="video">
+          <video
+            src="https://res.cloudinary.com/dijfvpznc/video/upload/v1713942192/CHAMBAYA/TURISMO%20VIDEOS/asoc_caballos_de_paso_lzoxd8.mp4"
+            controls
+            muted
+            autoplay
+          ></video>
+          <h3 class="title">01. Asoc. de criadores de caballos de paso</h3>
+        </div>
+      </div>
+      <div class="video-list">
+        <div class="vid active">
+          <video src="https://res.cloudinary.com/dijfvpznc/video/upload/v1713942192/CHAMBAYA/TURISMO%20VIDEOS/asoc_caballos_de_paso_lzoxd8.mp4"
+            muted></video>
+          <h3 class="title">01. Asoc. de criadores de caballos de paso</h3>
+        </div>
+        <div class="vid">
+          <video src="https://res.cloudinary.com/dijfvpznc/video/upload/v1713942604/CHAMBAYA/TURISMO%20VIDEOS/PARROQUIA_SE%C3%91OR_DE_HUAMAN_yyitiy.mp4"
+            muted></video>
+          <h3 class="title">02. Parroquia señor de Huamán</h3>
+        </div>
+        <div class="vid">
+          <video src="https://res.cloudinary.com/dijfvpznc/video/upload/v1713942612/CHAMBAYA/TURISMO%20VIDEOS/PASEO_DE_AGUAS_vq09lv.mp4" muted></video>
+          <h3 class="title">03. Paseo de las Aguas</h3>
+        </div>
+        <div class="vid">
+          <video src="https://res.cloudinary.com/dijfvpznc/video/upload/v1713942615/CHAMBAYA/TURISMO%20VIDEOS/PLAZA_VICTOR_LARCO_u54p8n.mp4" muted></video>
+          <h3 class="title">04. Plaza de Armas de Víctor Larco</h3>
+        </div>
+        <div class="vid">
+          <video src="https://res.cloudinary.com/dijfvpznc/video/upload/v1713942627/CHAMBAYA/TURISMO%20VIDEOS/Ovalo_de_la_marinera_lr3i5k.mp4" muted></video>
+          <h3 class="title">05. Óvalo de la marinera</h3>
+        </div>
+        <div class="vid">
+          <video
+          src="https://res.cloudinary.com/dijfvpznc/video/upload/v1713942630/CHAMBAYA/TURISMO%20VIDEOS/parque_virgen_medalla_milagrosa_dbocki.mp4"
+            muted
+          ></video>
+          <h3 class="title">06. Parque Virgen de la medalla milagrosa</h3>
+        </div>
+        <div class="vid">
+          <video src="https://res.cloudinary.com/dijfvpznc/video/upload/v1713942624/CHAMBAYA/TURISMO%20VIDEOS/PARROQUIA_VIRGEN_DE_FATIMA_e4pwgg.mp4" muted></video>
+          <h3 class="title">07. Parroquia Virgen de Fátima</h3>
+        </div>
+        <div class="vid">
+          <video src="https://res.cloudinary.com/dijfvpznc/video/upload/v1713942610/CHAMBAYA/TURISMO%20VIDEOS/plaza_cesar_vallejo_jebql7.mp4" muted></video>
+          <h3 class="title">08. Plaza César Vallejo</h3>
+        </div>
+        <div class="vid">
+          <video src="https://res.cloudinary.com/dijfvpznc/video/upload/v1713942607/CHAMBAYA/TURISMO%20VIDEOS/se%C3%B1orial_plaza_huaman_ok9uqr.mp4" muted></video>
+          <h3 class="title">09. Señorial plaza Huamán</h3>
+        </div>
+        <!-- <div class="vid">
+          <video src="../VIDEOS/Alameda Victor Larco.mp4" muted></video>
+          <h3 class="title">10. Alameda Víctor Larco</h3>
+        </div>
+        <div class="vid">
+          <video src="../VIDEOS/Plaza Vista Alegre.mp4" muted></video>
+          <h3 class="title">11. Plaza cívica de Vista Alegre</h3>
+        </div> -->
+      </div>
+    </div>
+    <br />
+    <footer>
+      <p> &#169; Todos los Derechos Reservados MDVLH 2023-2026 Diseñado por SGTI-MDVLH</p>
+    </footer>
+  </body>
+  <script src="JS/script.js"></script>
+  <script src="JS/googlemaps.js"></script>
+  <!-- AOS Library -->
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      delay: 400,
+    });
+  </script> -->
+</html>
